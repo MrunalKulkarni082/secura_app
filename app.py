@@ -5,10 +5,11 @@ import bcrypt
 # ---------- MYSQL CONFIGURATION ----------
 def get_connection():
     return mysql.connector.connect(
-        host="localhost",          # or your remote DB host
-        user="root",               # change if different
-        password="Mru2003@",  # use your MySQL password
-        database="secura_db"       # create this database before running
+        host=st.secrets["db_host"],
+        port=int(st.secrets["db_port"]),
+        user=st.secrets["db_user"],
+        password=st.secrets["db_password"],
+        database=st.secrets["db_name"]
     )
 
 # ---------- DATABASE SETUP ----------
