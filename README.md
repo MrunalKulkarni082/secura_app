@@ -1,4 +1,4 @@
-# SECURA Registration App
+# SECURA Emergency Registration App
 
 This is a Streamlit-based registration and login app for SECURA, connected to a MySQL database.
 
